@@ -11,7 +11,7 @@ export default function Subvideos({ title, src, desc }) {
       <div className="Subvideo-text">
         <p className="Subvideo-title">{title}</p>
 
-        <p className="Subvideo-text">{desc}</p>
+        <p className="Subvideo-desc">{desc}</p>
         <div className="Subvideo-btn-div">
           <button className="vid-btn watch">
             <WatchLaterIcon />

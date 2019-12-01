@@ -1,7 +1,28 @@
 .Subvideo {
   margin: 1rem;
 
-  width: 400px;
+  width: 370px;
+  @media only screen and (max-width: 1290px) {
+    width: 300px;
+  }
+  @media only screen and (max-width: 1110px) {
+    width: 280px;
+  }
+  @media only screen and (max-width: 1030px) {
+    width: 400px;
+  }
+  @media only screen and (max-width: 962px) {
+    width: 350px;
+  }
+  @media only screen and (max-width: 760px) {
+    width: 300px;
+  }
+  @media only screen and (max-width: 700px) {
+    width: 400px;
+  }
+  @media only screen and (max-width: 450px) {
+    width: 300px;
+  }
   cursor: pointer;
   flex-flow: row wrap;
   &:hover {
@@ -28,9 +49,14 @@
     margin-top: -30px;
   }
   &-title {
-    font-size: 26px;
+    font-size: 24px;
 
     text-align: left;
+  }
+  &-desc {
+    margin-top: -1rem;
+    font-size: 12px;
+    color: darkgrey;
   }
   &-btn-div {
     display: flex;
