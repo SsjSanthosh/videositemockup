@@ -22,6 +22,7 @@ import MailIcon from "@material-ui/icons/Mail";
 import Hidden from "@material-ui/core/Hidden";
 import Button from "@material-ui/core/Button";
 import Avatar from "@material-ui/core/Avatar";
+import Searchbar from "./Searchbar";
 
 const drawerWidth = 200;
 
@@ -143,11 +144,15 @@ export default function Navbar() {
                   </div>
                 </Hidden>
                 <div className={classes.uFlex}>
-                  <Button color="inherit">Account Settings</Button>
+                  <Button variant="contained" color="primary">
+                    Account Settings
+                  </Button>
                 </div>
               </div>
             </Hidden>
-            <Button color="inherit">Logout</Button>
+            <Button color="secondary" variant="contained">
+              Logout
+            </Button>
           </div>
         </Toolbar>
       </AppBar>
@@ -171,14 +176,6 @@ export default function Navbar() {
         </div>
         <Divider />
         <List>
-          {/* {["Account", "Uploads", "Messages", "Stats"].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))} */}
           <ListItem button key={1}>
             <ListItemIcon>
               <AccountCircleIcon />
@@ -210,7 +207,7 @@ export default function Navbar() {
           [classes.contentShift]: open
         })}
       >
-        <div className={classes.drawerHeader} />
+        <Searchbar />
       </main>
     </div>
   );

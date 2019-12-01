@@ -49,8 +49,9 @@ export default function VideoSite() {
   return (
     <div>
       <Navbar />
-      <Searchbar />
+
       <UploaderContent />
+      <div className="Subscriptions-title">Your Subscriptions</div>
       <div className="Subvideo-parent">{videos}</div>
     </div>
   );
